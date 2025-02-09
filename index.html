@@ -6,17 +6,23 @@
     <title> Дни до дня рождения! </title>
     <link rel="stylesheet" href="styles/normalize.css"> 
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hachi+Maru+Pop&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=M+PLUS+Rounded+1c&family=Roboto+Slab&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
     <div class="container"> 
-        <H2 class="container__tittle"> Дни до дня рождения </H2>
-        <div class="container__dates"> 
-            <label for="date">Дата рождения: </label>
-            <input type="date" id="birthdate" name="date"/>
-            <button onclick="calculateDays()"> Рассчитать </button>
-        </div>
-        <p id="empty" class="empty">Пожалуйста, введите дату своего рождения! </p>
-        <p id="result"> </p>
+            <H2 class="container__tittle"> Дни до дня рождения </H2>
+            <div class="container__dates"> 
+                <label for="date">Дата рождения: </label>
+                <input type="date" id="birthdate" name="date" class="birthdate"/>
+                <button onclick="calculateDays()" class="button"> Рассчитать </button>
+            </div>
+            <p id="empty" class="empty">Пожалуйста, введите дату своего рождения! </p>
+            <p id="result"> </p>
+        
     </div>
     <script src="script.js"> </script>
 </body> 
