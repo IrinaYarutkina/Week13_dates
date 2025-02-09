@@ -17,7 +17,7 @@ function calculateDays() {
     }
     const diffTime = birthday - today;
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    result.textContent = `До дня рождения осталось ${diffDays} ${getDayWord(diffDays)}.`;
+    result.textContent = `До твоего дня рождения осталось ${diffDays} ${getDayWord(diffDays)}.`;
 }
 function getDayWord(number) {
     if (number % 10 === 1 && number % 100 !== 11) {
