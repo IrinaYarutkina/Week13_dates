@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Дни до дня рождения! </title>
+    <link rel="stylesheet" href="styles/normalize.css"> 
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <div class="container"> 
         <H2 class="container__tittle"> Дни до дня рождения </H2>
         <div class="container__dates"> 
             <label for="date">Дата рождения: </label>
-            <input type="date" id="date" name="date"/>
-            <button type="submit"> Посчитать </button>
+            <input type="date" id="birthdate" name="date"/>
+            <button onclick="calculateDays()"> Рассчитать </button>
         </div>
-        <p> До дня рождения осталось </p>
-
+        <p id="empty" class="empty">Пожалуйста, введите дату своего рождения! </p>
+        <p id="result"> </p>
     </div>
-</body>
+    <script src="script.js"> </script>
+</body> 
 </html>
